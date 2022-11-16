@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #1E2023;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+#header .header {
+  padding: 20px 0;
+}
+#header .header label ion-icon {
+  color: #fff;
+  font-size: 40px;
+}
+
+#hero .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero .hero h1 {
+  padding: 50px 0;
+  font-weight: 900;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#hero .hero input {
+  margin: 20px 0;
+  min-width: 30%;
+  max-width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  font-size: 20px;
+  color: #1E2023;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+#hero .hero button {
+  font-weight: 900;
+  color: #FFFFFF;
+  padding: 15px 40px;
+  background: #1A5CFF;
+  box-shadow: 0 5px 8px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  border: none;
+  margin: 10px 0;
+}
+#hero .hero button:hover {
+  padding: 15px 40px;
+  background: transparent;
+  border: 2px solid #9099A3;
+  box-shadow: none;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+#hero .hero p {
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #9099A3;
+}
+
+/*# sourceMappingURL=style.css.map */

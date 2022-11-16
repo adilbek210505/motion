@@ -1,0 +1,668 @@
+@import "reset";
+@import "mixin";
+@import "global";
+
+#header {
+
+  background: #000000;
+  padding: 20px 0;
+
+  .header {
+    @include dfb();
+
+    img {
+
+    }
+
+    &--link {
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0 10px;
+        color: #FFFFFF;
+        @include link-hover();
+      }
+    }
+
+    &--service {
+      label {
+        select {
+          border: none;
+          outline: none;
+          background: transparent;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+          color: #FFFFFF;
+
+          option {
+            color: black;
+            background: transparent;
+          }
+        }
+      }
+
+      button {
+        margin: 0 30px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 10px 30px;
+        background: #0096C7;
+        border-radius: 10px;
+        color: #FFFFFF;
+        @include btn-hover();
+      }
+    }
+  }
+}
+
+#hero {
+  position: relative;
+  @include center();
+  min-height: 80vh;
+
+  .hero {
+    @include dfb();
+    align-items: flex-start;
+
+    &--group {
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        color: #9099A3;
+      }
+
+      h1 {
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+      }
+
+      button {
+        width: 200px;
+        height: 40px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        font-size: 17px;
+        text-transform: capitalize;
+        color: #000000;
+        @include btn-hover();
+      }
+    }
+
+    img {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+#slider {
+  min-height: 50vh;
+  padding: 100px 0;
+
+  .slider {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 54px;
+      color: #FFFFFF;
+    }
+
+    &--block {
+      @include dfb();
+      width: 600px;
+      height: 300px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      padding: 0 20px;
+
+
+      &__left {
+
+        &--bottom {
+          @include center();
+
+          &__icon {
+            @include center();
+
+            ion-icon {
+              color: #9099A3;
+            }
+
+            h2 {
+              font-weight: 400;
+              font-size: 12px;
+              color: #9099A3;
+            }
+          }
+
+          h2 {
+            padding: 0 10px;
+            font-weight: 400;
+            font-size: 12px;
+            color: #9099A3;
+          }
+        }
+
+        &--center {
+          h1 {
+            font-weight: 700;
+            font-size: 20px;
+            text-align: left;
+            color: #2C3E50;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2C3E50;
+            padding: 30px 0 40px 0;
+          }
+
+          button {
+            @include center();
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #000000;
+            border: none;
+            border-bottom: 2px solid #000;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+#article {
+  .article {
+    &--btn {
+      text-align: center;
+
+      button {
+        margin: 30px 0;
+        font-weight: 700;
+        font-size: 20px;
+        border: none;
+        color: #FFFFFF;
+        width: 300px;
+        height: 60px;
+        background: #0096C7;
+        border-radius: 15px;
+        @include btn-hover();
+      }
+    }
+
+    &--group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 60px;
+      justify-items: center;
+
+      &__block {
+        margin: 10px 0;
+        @include fd();
+        padding: 20px;
+        width: 500px;
+        height: 300px;
+        background: #FFFFFF;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+
+        &--icon {
+          @include center();
+
+          ion-icon {
+            color: #9099A3;
+          }
+
+          h2 {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #9099A3;
+          }
+
+        }
+
+        h1 {
+          padding: 10px 0;
+          font-weight: 700;
+          font-size: 20px;
+          color: #2C3E50;
+          line-height: 24px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          color: #9099A3;
+          padding: 20px 0;
+        }
+
+        .hr {
+          margin: 20px 0;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #9099A3;
+        }
+
+        &--text {
+          @include center();
+
+          img {
+            margin: 0 10px 0 0;
+          }
+
+          h6 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2C3E50;
+          }
+
+          h5 {
+            font-weight: 400;
+            font-size: 14px;
+            color: #9099A3;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+#master  {
+  min-height: 100vh;
+
+  .master {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+
+    &--btn {
+      button {
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        background: #0096C7;
+        border-radius: 10px;
+        margin: 20px 0;
+        @include master-btn();
+      }
+    }
+
+    &--group {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      grid-template: repeat(1,1fr) / repeat(3, 1fr);
+      justify-items: center;
+
+      &__block {
+        margin: 10px 0;
+        width: 326px;
+        padding: 20px;
+        height: 300px;
+        background: #FFFFFF;
+        border-radius: 15px;
+
+        &--header {
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            color: #FFFFFF;
+            padding: 5px 10px;
+            display: inline-block;
+            background: #9099A3;
+            border-radius: 5px;
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 12px;
+            color: #9099A3;
+          }
+        }
+
+        h1 {
+          font-weight: 700;
+          padding: 20px 0;
+          font-size: 20px;
+          color: #2C3E50;
+        }
+
+        h5 {
+          font-weight: 400;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #2C3E50;
+        }
+
+        hr {
+          margin: 20px 0;
+        }
+
+        &--footer {
+          @include center();
+
+          img {
+            margin: 0 10px 0 0;
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 16px;
+            color: #2C3E50;
+          }
+
+          h3 {
+            font-weight: 400;
+            font-size: 14px;
+            color: #9099A3;
+          }
+        }
+      }
+    }
+
+    &--button {
+      text-align: center;
+    }
+
+    button {
+      font-weight: 900;
+      margin: 20px 0;
+      font-size: 18px;
+      color: #9099A3;
+      border: 2px solid #9099A3;
+      background: transparent;
+      padding: 10px 30px;
+      border-radius: 12px;
+    }
+
+    &--footer {
+      @include dfb();
+      margin: 90px 0;
+      background: #FFFFFF;
+      border-radius: 15px;
+      height: 200px;
+      width: 90%;
+      padding: 20px;
+
+      &__left {
+        h1 {
+          padding: 30px 0;
+          font-weight: 700;
+          font-size: 20px;
+          color: #2C3E50;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          color: #9099A3;
+        }
+
+      }
+
+      &__right {
+        @include fd();
+
+        button {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+          padding: 10px 40px;
+          background: #0096C7;
+          border-radius: 10px;
+          @include btn-hover();
+        }
+      }
+    }
+  }
+}
+
+#service {
+  min-height: 70vh;
+
+  .service {
+    @include dfb();
+    align-items: flex-start;
+
+    &--left {
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #9099A3;
+
+      }
+    }
+
+    &--right {
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #9099A3;
+        padding: 20px 0 0 0;
+      }
+
+      input {
+        width: 616px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.2);
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        padding-left: 20px;
+      }
+
+      &__group {
+        @include dfb();
+        margin: 10px 0;
+
+        h3 {
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+
+        }
+
+        button {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+          width: 280px;
+          height: 50px;
+          background: #0096C7;
+          border-radius: 10px;
+          @include btn-hover();
+        }
+      }
+    }
+
+  }
+}
+
+#reviews {
+  .reviews {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    &--group {
+      padding: 90px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+      justify-items: center;
+
+      &__block {
+        margin: 10px 0;
+        width: 400px;
+        padding: 20px;
+        height: 175px;
+        background: #161618;
+        border-radius: 15px;
+
+        img {
+          margin: -60px 0 0 160px;
+        }
+
+        h1 {
+          font-weight: 400;
+          font-size: 12px;
+          padding: 20px 0;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        p {
+          display: flex;
+          font-weight: 700;
+          font-size: 14px;
+          color: #FFFFFF;
+
+          span {
+            padding-left: 10px;
+            font-weight: 400;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+
+    &--possible {
+      @include dfb();
+      &__text {
+        h6 {
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+        P {
+          font-weight: 700;
+          font-size: 144px;
+          line-height: 176px;
+          color: #1A5CFF;
+        }
+      }
+      &--accordion {
+        details {
+          summary {
+            border-bottom: 2px solid #9099A3;
+            padding: 10px 0;
+            &::marker {
+              font-size: 20px;
+              color: #1A5CFF;
+            }
+            font-weight: 500;
+            font-size: 20px;
+            cursor: pointer;
+            color: #FFFFFF;
+          }
+          p {
+            font-weight: 400;
+            padding: 20px 0;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            max-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  margin: 100px 0 0 0;
+  .footer {
+    &--group {
+      @include dfe();
+      img {}
+      &__text {
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #9099A3;
+        }
+      }
+      &__service {
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #9099A3;
+        }
+      }
+      &__icon {
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        ion-icon {
+          color: white;
+          font-size: 30px;
+        }
+      }
+
+    }
+    &--pos {
+      @include dfb();
+      &__block {
+        @include center();
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 14px;
+        color: #9099A3;
+      }
+      svg {
+
+      }
+    }
+  }
+}
