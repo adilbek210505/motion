@@ -1,0 +1,213 @@
+@import "reset";
+@import "mixin";
+@import "global";
+.hamburger-menu {
+  display: none;
+}
+#header {
+
+  background: #000000;
+  padding: 20px 0;
+
+  .header {
+    @include dfb();
+
+    img {
+
+    }
+
+    &--link {
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0 10px;
+        color: #FFFFFF;
+        @include link-hover();
+      }
+    }
+
+    &--service {
+      label {
+        select {
+          border: none;
+          outline: none;
+          background: transparent;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+          color: #FFFFFF;
+
+          option {
+            color: black;
+            background: transparent;
+          }
+        }
+      }
+
+      button {
+        margin: 0 30px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 10px 30px;
+        background: #0096C7;
+        border-radius: 10px;
+        color: #FFFFFF;
+        @include btn-hover();
+      }
+    }
+  }
+}
+
+#hero {
+  min-height: 100vh;
+  .hero {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+      padding: 20px 0;
+    }
+
+    &--btn {
+      button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        background: #0096C7;
+        padding: 10px 20px;
+        box-shadow: 0 20px 40px rgba(26, 92, 255, 0.2);
+        border-radius: 10px;
+        color: #FFFFFF;
+        @include btn-hover();
+      }
+    }
+    &--group {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      grid-template: repeat(2, 1fr) / 1fr 1fr 1fr ;
+      grid-gap: 90px;
+      &__block {
+        width: 320px;
+        height: 600px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        img {
+        }
+        &--icon {
+          @include center();
+          padding: 0 10px;
+          img {
+
+          }
+          p {
+            padding: 0 10px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #9099A3;
+          }
+        }
+        h2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: #2C3E50;
+          padding: 10px 10px;
+        }
+        h4 {
+          padding: 0 10px;
+          font-weight: 400;
+          width: 303px;
+          font-size: 14px;
+          line-height: 21px;
+          color: #2C3E50;
+        }
+        button {
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 27px;
+          text-transform: capitalize;
+          color: #FFFFFF;
+          width: 180px;
+          height: 40px;
+          background: #0096C7;
+          margin: 0 10px;
+          float: right;
+          border-radius: 15px;
+        }
+      }
+    }
+
+  }
+}
+
+#footer {
+  margin: 100px 0 0 0;
+  .footer {
+    &--group {
+      @include dfe();
+      img {}
+      &__text {
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #9099A3;
+        }
+      }
+      &__service {
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #9099A3;
+        }
+      }
+      &__icon {
+        h1 {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+        ion-icon {
+          color: white;
+          font-size: 30px;
+        }
+      }
+
+    }
+    &--pos {
+      @include dfb();
+      &__block {
+        @include center();
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 14px;
+        color: #9099A3;
+      }
+      svg {
+
+      }
+    }
+  }
+}
+
+
+

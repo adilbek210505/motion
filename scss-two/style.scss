@@ -1,7 +1,9 @@
 @import "reset";
 @import "mixin";
 @import "global";
-
+.hamburger-menu {
+  display: none;
+}
 #header {
 
   background: #000000;
