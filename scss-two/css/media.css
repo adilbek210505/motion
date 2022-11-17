@@ -28,6 +28,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .menu__box {
+    background: #222222;
+  }
   .hamburger-menu {
     display: flex;
   }
